@@ -24,6 +24,10 @@ export const useCalc = () => {
   }
 
   function handlerCalc () {
+    if ( !!firstNumber && !!operator ){
+      handlerReset( firstNumber );
+      return;
+    }
     if ( !!firstNumber && !!secondNumber && !!operator ){
       const calcs = {
         '+': parseFloat( firstNumber ) + parseFloat( secondNumber ),
