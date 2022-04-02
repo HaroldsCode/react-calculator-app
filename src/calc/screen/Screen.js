@@ -10,13 +10,12 @@ export const Screen = () => {
 
   return (
     <Styled>
-      {/* <span>{ !!secondNumber ? secondNumber : !!operator ? operator : firstNumber }</span> */}
       <span>{firstNumber}{operator}{secondNumber}</span>
     </Styled>
   )
 }
 
-const Styled = styled.section`
+const Styled = styled.div`
   position: relative;
   overflow: hidden;
   grid-row: 2;

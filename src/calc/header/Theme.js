@@ -12,7 +12,7 @@ const Styled = styled.form`
   background-color: ${ ({ theme }) => theme.toggleKeyboradBg };
   padding: 0.5rem;
 
-  & > nav{
+  & > div{
     position: absolute;
     display: flex;
     align-items: center;
@@ -54,11 +54,11 @@ export const Theme = () => {
 
   return (
     <Styled onSubmit={ (e) => e.preventDefault() } aria-hidden="true">
-      <nav>
+      <div>
         <label htmlFor="one">1</label>
         <label htmlFor="two">2</label>
         <label htmlFor="three">3</label>
-      </nav>
+      </div>
       <input type="button" id='one' className={ theme === 'one' ? 'active' : undefined } onClick={ () => handleThemeChange( 'one' ) } value=''/>
       <input type="button" id='two' className={ theme === 'two' ? 'active' : undefined } onClick={ () => handleThemeChange( 'two' ) } value=''/>
       <input type="button" id='three' className={ theme === 'three' ? 'active' : undefined } onClick={ () => handleThemeChange( 'three' ) } value=''/>
