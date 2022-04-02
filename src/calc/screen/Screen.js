@@ -16,7 +16,7 @@ export const Screen = () => {
   )
 }
 
-const Styled = styled.div`
+const Styled = styled.section`
   position: relative;
   overflow: hidden;
   grid-row: 2;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { Theme } from './Theme';
 
-const Styled = styled.div`
+const Styled = styled.header`
   height: 4rem;
   grid-row: 1;
   display: flex;
