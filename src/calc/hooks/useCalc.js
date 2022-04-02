@@ -24,7 +24,7 @@ export const useCalc = () => {
   }
 
   function handlerCalc () {
-    if ( !!firstNumber && !!operator ){
+    if ( !!firstNumber && !!operator && secondNumber === '' ){
       handlerReset( firstNumber );
       return;
     }
