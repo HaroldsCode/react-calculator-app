@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { CalcApp } from './calc/CalcApp';
+import { Index } from './calc/Index';
 
-ReactDOM.render( < CalcApp /> , document.getElementById('root') );
+ReactDOM.render( < Index /> , document.getElementById('root') );
