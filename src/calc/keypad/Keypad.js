@@ -13,7 +13,7 @@ export const Keypad = () => {
   );
 };
 
-const Styled = styled.section`
+const Styled = styled.div`
   grid-row: 3;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
